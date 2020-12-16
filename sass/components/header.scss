@@ -1,0 +1,69 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 150px;
+
+    @media screen and (max-width: 763px){
+        margin-bottom: 38px;
+    }
+
+    &__logo{
+        padding: 8px;
+        border: 1px solid white;
+
+        font-size: 14px;
+        font-weight: 200;
+
+        font-family: 'Crimson Pro', serif;
+    }
+
+    &__nav{
+        display: flex;
+
+        @media screen and (max-width: 873px){
+            display: none;
+        }
+    }
+
+    &__link{
+        list-style: none;
+        margin-left: 86px;
+
+        font-size: 18px;
+        font-weight: 500;
+
+        &--active{
+            font-weight: 700;
+        }
+    }
+
+    &__navbutton{
+        height: 19.5px;
+        display:none;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: 0.1s linear;
+
+        position: relative;
+        z-index: 3;
+
+        &:hover{
+            opacity: 0.5;
+        }
+
+        @media screen and (max-width: 873px){
+            display: flex;
+        }
+
+        &-bar{
+            width: 28.5px;
+            height: 4px;
+            background-color: white;
+        }
+
+    }
+}

@@ -1,0 +1,58 @@
+.card{
+    position: absolute;
+    width: 55%;
+    min-width: 280px;
+
+    background-color: #181719;
+
+    right: 6%;
+    bottom: -95px;
+
+    padding: 23px 26px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &__person{
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &__photo{
+        height: 47px;
+        width: 47px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        margin-right: 20px;
+    }
+
+    &__name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        h3{
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        p{
+            font-size: 12px;
+            font-weight: 500;
+            color: gray;
+        }
+    }
+
+    &__title{
+        font-family: Lora;
+        font-size: 24px;
+        line-height: 31px;
+
+        @media screen and (max-width: 425px){
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+}
